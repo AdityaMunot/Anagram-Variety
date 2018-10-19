@@ -9,6 +9,7 @@ class test(unittest.TestCase):
     def test_anagram(self):
 
         self.assertTrue(anagram('iceman', 'cinema'))
+        self.assertTrue(anagram('dormitory', 'dirtyroom'))
         self.assertFalse(anagram('pikapika', 'pikapik'), False)
         
 if __name__ == '__main__':
