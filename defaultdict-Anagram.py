@@ -19,8 +19,8 @@ class test(unittest.TestCase):
     
     def test_anagram_dd(self):
 
-        self.assertEqual(anagram_dd('hello', 'ollhe'), True)
-        self.assertEqual(anagram_dd('pikapika', 'pikapiko'), False)
+        self.assertTrue(anagram_dd('hello', 'ollhe'))
+        self.assertFalse(anagram_dd('pikapika', 'pikapiko'))
         
 if __name__ == '__main__':
     # note: there is no main(). Only test cases here
