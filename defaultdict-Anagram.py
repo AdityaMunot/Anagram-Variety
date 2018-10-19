@@ -1,5 +1,7 @@
 
-def anagram_dd(st1, st2):  # PArt 1.2
+# Anagram Using Defaultdict function
+
+def anagram_dd(st1, st2):
 
     dd = defaultdict(int)
     for c in st1:
@@ -9,3 +11,5 @@ def anagram_dd(st1, st2):  # PArt 1.2
             dd[c] -= 1
         else:
             return False
+    
+    return not any(dd.value())
