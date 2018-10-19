@@ -13,3 +13,15 @@ def anagram_dd(st1, st2):
             return False
     
     return not any(dd.value())
+
+
+class test(unittest.TestCase):
+    
+    def test_anagram_dd(self):
+
+        self.assertEqual(anagram_dd('hello', 'ollhe'), True)
+        self.assertEqual(anagram_dd('pikapika', 'pikapiko'), False)
+        
+if __name__ == '__main__':
+    # note: there is no main(). Only test cases here
+    unittest.main(exit=False, verbosity=2)
